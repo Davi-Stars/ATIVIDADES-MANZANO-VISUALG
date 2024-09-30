@@ -1,0 +1,148 @@
+início
+  // Exerciço 7-A: Bora somar KKJ
+  var A, B: inteiro
+  leia(A, B)
+  A <- A + B
+  escreva(A)  // Resultado topzera!
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 7-B: Quem é o maioral?
+  var A, B: inteiro
+  leia(A, B)
+  se (A > B) então
+    escreva("A é maior, vacilão!")
+  senao
+    escreva("B mandou um salve e é maior, firmeza.")
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 7-C: Quem é o maior entre A, B e C? Treta das grandes
+  var A, B, C: inteiro
+  leia(A, B, C)
+  se (A > B e A > C) então
+    escreva("A é o bichão mesmo!")
+  senao
+    se (B > C) então
+      escreva("B deu um pau em todo mundo!")
+    senao
+      escreva("C foi lá e pá!")
+    fimse
+  fimse
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 3.10-A: Multiplica aí que a conta é braba
+  var A, B, C, D, P, S: inteiro
+  leia(A, B, C, D)
+  P <- A * C
+  S <- B + D
+  escreva("Produto: ", P, " Soma: ", S)  // Tá, fiz a conta, bora pro próximo
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 3.10-B: Salário reajustado, tipo promoção Black Friday kkk
+  var SM, PR, NS: real
+  leia(SM, PR)
+  NS <- SM + (SM * PR / 100)
+  escreva("Novo Salário: ", NS)  // Ó o aumento, chefia! Tô na área.
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 3.10-C: Eleição treta! Vamos contar os votos
+  var votosA, votosB, votosC, nulos, brancos, total: inteiro
+  var percVotos, percA, percB, percC, percNulos, percBrancos: real
+  leia(votosA, votosB, votosC, nulos, brancos)
+  total <- votosA + votosB + votosC + nulos + brancos
+  percVotos <- (votosA + votosB + votosC) / total * 100
+  percA <- votosA / total * 100
+  percB <- votosB / total * 100
+  percC <- votosC / total * 100
+  percNulos <- nulos / total * 100
+  percBrancos <- brancos / total * 100
+  escreva("Total de eleitores: ", total)
+  escreva("Percentual de votos válidos: ", percVotos)
+  escreva("Percentual de votos A: ", percA)
+  escreva("Percentual de votos B: ", percB)
+  escreva("Percentual de votos C: ", percC)
+  escreva("Percentual de votos nulos: ", percNulos)
+  escreva("Percentual de votos brancos: ", percBrancos)
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 5.1.1-A: Tabuada monstra do 5
+  var i: inteiro
+  para i de 1 ate 10 faca
+    escreval(i, " * ", 5, " = ", i * 5)  // Multiplicando aqui que nem um foguete
+  fimpara
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 5.1.1-B: Bora somar de 1 a 100, pq é isso aí!
+  var soma, i: inteiro
+  soma <- 0
+  para i de 1 ate 100 faca
+    soma <- soma + i
+  fimpara
+  escreva("Soma: ", soma)  // Ah moleque, deu certinho!
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 5.2.1-A: Quadrado de 15 até 200. Vamo que vamo!
+  var i: inteiro
+  para i de 15 ate 200 faca
+    escreva("Quadrado de ", i, " = ", i * i)  // É quadrado que você quer, @?
+  fimpara
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 5.2.1-B: Soma dos números pares, pq sim!
+  var soma, i: inteiro
+  soma <- 0
+  para i de 1 ate 500 faca
+    se (i % 2 = 0) então
+      soma <- soma + i
+    fimse
+  fimpara
+  escreva("Soma dos pares: ", soma)  // Soma é só sucesso, só de número par!
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 5.6.1-A: Mais quadrados, pq a galera gosta, né?
+  var i: inteiro
+  para i de 15 ate 200 faca
+    escreva("Quadrado de ", i, " = ", i * i)  // Quadradão tá na moda
+  fimpara
+fim
+
+//////////////////////////////////////////////////////////////////
+
+início
+  // Exerciço 5.6.1-B: Bora montar a tabuada que o povo quer
+  var num, i: inteiro
+  leia(num)
+  para i de 1 ate 10 faca
+    escreva(num, " * ", i, " = ", num * i)  // Olha o loop infinito da tabuada!
+  fimpara
+fim
